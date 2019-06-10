@@ -31,6 +31,11 @@ public class HandleData {
     @Autowired
     AlgresultMapper algresultMapper;
 
+    /**
+     * 不可信评估检测
+     * @param data
+     * @return
+     */
     public boolean judgeComment(List<Double> data){
 
         //判断相同数据比例

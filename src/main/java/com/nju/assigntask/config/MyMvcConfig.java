@@ -18,13 +18,13 @@ public class MyMvcConfig extends WebMvcConfigurerAdapter {
         WebMvcConfigurerAdapter adapter = new WebMvcConfigurerAdapter() {
             @Override
             public void addViewControllers(ViewControllerRegistry registry) {
-                registry.addViewController("/").setViewName("/user/login");
+                registry.addViewController("/").setViewName("user/login.html");
                 registry.addViewController("/index.html").setViewName("login");
-                registry.addViewController("/addrelease").setViewName("/user/addrelease");
-                registry.addViewController("/myreleasetask").setViewName("/user/myreleasetask");
-                registry.addViewController("/myreceivedtask").setViewName("/user/myreceivedtask");
-                registry.addViewController("/comment").setViewName("/user/comment");
-                registry.addViewController("/register").setViewName("/user/register");
+                registry.addViewController("/addrelease").setViewName("user/addrelease.html");
+                registry.addViewController("/myreleasetask").setViewName("user/myreleasetask.html");
+                registry.addViewController("/myreceivedtask").setViewName("user/myreceivedtask.html");
+                registry.addViewController("/comment").setViewName("user/comment.html");
+                registry.addViewController("/register").setViewName("user/register.html");
             }
 
             //注册拦截器
